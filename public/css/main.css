@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.content-section {
+  width: 100%;
+}
+
+.content-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  gap: 25px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: black;
+  padding: 5px;
+}
+.profile-name {
+  margin: 10px 0px;
+}
+.profile-label {
+  color: black;
+  font-size: 12px;
+  background-color: rgb(98, 0, 255);
+  border: 2px solid rgb(68, 10, 161);
+  border-radius: 50px;
+  padding: 6px 20px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+.profile-about {
+  font-weight: 500;
+  text-align: center;
+  padding: 0px 20px;
+  margin: 10px 0px;
+}
+.profile-social {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.profile-social-icon {
+  text-decoration: none;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(98, 0, 255);
+}
+/* ----------------------------------------------------------- */
+
+.content-skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.skills-title {
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.skills-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px rgba(126, 126, 126, 0.6);
+}
+
+.skills-image {
+  width: 60px;
+}
+.skills-name {
+  font-weight: 500;
+  font-size: 15px;
+}
+/* ----------------------------------------------------------- */
+
+.content-works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+.works-title {
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+}
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 10px;
+  width: 100%;
+}
+.works-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: auto;
+  margin: 0px 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px rgba(126, 126, 126, 0.6);
+  /* cursor: pointer; */
+}
+.works-image {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 10px 10px 0px 0px;
+}
+.works-description {
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* ----------------------------------------------------------- */
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  .content-profile {
+    min-height: auto;
+    padding: 20px;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .profile-about {
+    font-weight: 500;
+    text-align: start;
+  }
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .content-skills {
+    min-height: auto;
+    padding: 20px;
+  }
+  .content-works {
+    min-height: auto;
+    padding: 20px;
+    gap: 10px;
+  }
+  .works {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .content-profile {
+    min-height: auto;
+    padding: 20px;
+    flex-direction: row;
+  }
+  .profile {
+    width: 30%;
+  }
+  .skills-title {
+    width: 40%;
+    text-align: start;
+  }
+  .skills {
+    width: 40%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .content-skills {
+    min-height: auto;
+    padding: 20px;
+  }
+
+  .works-title {
+    width: 40%;
+    text-align: start;
+  }
+  .content-works {
+    min-height: auto;
+    padding: 20px;
+    gap: 10px;
+  }
+  .works {
+    flex-direction: row;
+    width: 30%;
+  }
+}
